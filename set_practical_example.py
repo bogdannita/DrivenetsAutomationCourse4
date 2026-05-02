@@ -29,7 +29,7 @@ def count_unique_words(book):
     unique_words = set()
     punctuation = ".,;'?!_-:\">=<"
     total_words_count = 0
-    f = open(book)
+    f = open(book, encoding='utf-8')
     for line in f:
         line = line.lower()
         for p in punctuation:
