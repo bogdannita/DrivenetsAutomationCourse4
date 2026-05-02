@@ -6,7 +6,7 @@ def word_frequency(book, len_words=0):
     :param book: the local filename
     :return: a dict where the key is the unique word, value is the number of times it shows up in the book
     """
-    f = open(book)
+    f = open(book, encoding='utf-8')
     punctuation = ".,;'?!_-:\">=<"
     freq = {}
     for line in f:
